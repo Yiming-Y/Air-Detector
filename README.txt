@@ -14,14 +14,13 @@ GP2Y1014AU         PM2.5 sensor  5V
 ESP8266-01S        WiFi Module  3.3V
 0.96 inch          Oled screen  5V
 1.8 inch           TFT screen  5V
-                   Buzzer  5V
                    Led light  5V
                    Individual buttons  5V
 Keil5
-Visual Studio Code
 Mini Program Development Tools
 MQTT.fx
 Node.js
+MySQL
 Navicat Premium 15
 
 
@@ -31,7 +30,7 @@ The device includes the detection module, the display and the LEDs and control b
 The alarm system has an anti-touch function: for example when the light intensity is too high，the alarm will be turned on automatically . If the light intensity is still high after the alarm has been manually switched off, the alarm will be activated again after a certain period of time. If the alarm is switched on manually, but the value is normal, the alarm will be switched off automatically after a period of time.
 
 (4)Server
-In this project, the server used was purchased from Tencent Cloud, and MQTT and EMQX were built onto the server and used as publishers to transfer data. The IP address of the server is: 1.117.73.73, and the IP address of the EMQX platform is: http://1.117.73.73:18083. The mini-program and the cloud dashboard both use port 8084.
+In this project, the server used was purchased from Tencent Cloud, and MQTT and EMQX were built onto the server and used as publishers to transfer data. The IP address of the server is: 110.40.167.13, and the IP address of the EMQX platform is: http://110.40.167.13:18083. The mini-program and the cloud dashboard both use port 8084/8083.
 
 (5)Software 
 Because publishing the applet required several reviews, the simulation was performed in the applet developer tool and the applet was used as a subscriber to fetch data from MQTT. The applet includes a login page, a live data page, a control page and a user page. On the login page, users can log in after signing up for an account and bind their mobile phone number to change their password. On the real-time data page, you can see the real-time detection data as well as the current location and weather. On the control page, the status of the LED lights in the device is updated to the software in real-time, and can be controlled by switching on and off the LED lights in the device. Because of server delays and limitations when the applet is not published, there are sometimes short delays or failures when controlling the device. On the user page, you can view the time of each login.
