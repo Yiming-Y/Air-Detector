@@ -1,0 +1,7 @@
+# Step 1: Device connects to wifi
+Please set the phone name to: myphone in the settings of your phone, and the connection password of the hotspot to: 123456789. 
+Because esp8266 can only connect to 2.4G wifi, if it is an iPhone, it will default to 2.4G when you turn on the hotspot, 
+and if it is a newer version of Android phone, you may need to switch the 5G/2.4G in the hotspot settings.
+
+# Step 2: Download mini program development software
+The download link is: 
