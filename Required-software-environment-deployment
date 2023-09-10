@@ -6,7 +6,7 @@ and if it is a newer version of Android phone, you may need to switch the 5G/2.4
 # Step 2: Download mini program development software
 The download link is: https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html      Stable Version Stable Build
 
-Then download the code for the mini-program, import the code into the mini-program, and click Compile to run the mini-program.
+Then download the code: 'Air Detector.zip' for the mini-program, import the code into the mini-program, and click Compile to run the mini-program.
 
 # Step 3: node.js, node-red and dashboard
 ## node.js download links: https://nodejs.org/en/download
