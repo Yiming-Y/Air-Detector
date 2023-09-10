@@ -4,4 +4,63 @@ Because esp8266 can only connect to 2.4G wifi, if it is an iPhone, it will defau
 and if it is a newer version of Android phone, you may need to switch the 5G/2.4G in the hotspot settings.
 
 # Step 2: Download mini program development software
-The download link is: 
+The download link is: https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html      Stable Version Stable Build
+
+Then download the code for the mini-program, import the code into the mini-program, and click Compile to run the mini-program.
+
+# Step 3: node.js, node-red and dashboard
+## node.js download links: https://nodejs.org/en/download
+
+Check that Node.js and npm are installed correctly by entering the following commands in a new window.
+Using Powershell:    node --version; npm --version
+Using cmd:    node --version && npm --version
+
+## Installing Node-RED (Please open cmd as administrator)
+Using cmd:   npm install -g --unsafe-perm node-red
+
+If the installation fails, restart cmd as administrator and try again!
+
+# Step 4: run the node-red
+Open cmd as administrator and type: "node-red"
+open link: http://localhost:1880/
+
+## Download node-red related nodes
+Click Settings ———— Node Management ———— Installation in the upper right corner to search and install the following nodes in order.
+
+node-red-contrib-remote
+node-red-dashboard
+node-red-node-email
+node-red-node-mysql
+
+## Importing node configuration and code
+(1) Download flowers.json
+(2) Click on Settings in the upper right corner ———— Import ———— select the file to be imported ———— select flowers.json
+
+# Step 5: open dashboard
+open link: http://localhost:1880/ui
+
+# Step 6: Download MySQL Database
+open link: https://dev.mysql.com/downloads/mysql/
+select Windows (x86, 64-bit), MSI Installer  ———— select "No thanks, just start my download."
+
+# Step 7: run the MySQL
+Open cmd as administrator and type: 'net start mysql'
+
+# Step 7: Download Navicat
+open link: https://www.navicat.com/en/download/navicat-for-mysql
+
+# Step 8: Configure Navicat
+## Create a new MySQL connection and enter the following configuration：
+Connection Name: airdetector
+Host: localhost
+Port: 3306
+User Name: root
+Password: 
+
+## Create a new database called: 'air'
+Download the air.sql file and import it into the newly created database. Then double-click on the 'air' database to open it.
+
+All configurations are now complete!
+
+
+
