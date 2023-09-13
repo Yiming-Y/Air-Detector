@@ -2,3 +2,13 @@ Bluetooth name: HC-08
 
 If you have an Android phone: please download the software: 'base.apk'.  also you can open the link to View Tutorial: https://www.jianshu.com/p/1a8262492619
 If it is an iPhone, please search and download DSD TECH Bluetooth from apple store.
+
+    if(Res =='F') g_USART3_FLAG =1;  forward
+		if(Res =='B') g_USART3_FLAG =2;  backword
+		if(Res =='R') g_USART3_FLAG =3;  right
+		if(Res =='L') g_USART3_FLAG =4;  left
+		if(Res =='S') g_USART3_FLAG =5;  stop
+		if(Res == '1') Mode =1;          follow mode
+		if(Res == '2') Mode =2;          Bluetooth control mode
+		if(Res == '3') Mode =3;          Ultrasonic obstacle avoidance mode
+		if(Res == '0') Mode =0;          stop mode
